@@ -1,9 +1,11 @@
+import HeroPostItem from './HeroPostItem'
+
 /* eslint-disable @next/next/no-img-element */
 const Hero = () => {
   return (
     <div>
       <section>
-      {/* round pictures */}
+        {/* round pictures */}
         <div className='flex space-x-2 p-6 cursor-pointer border overflow-x-scroll scrollbar-none rounded-sm'>
           <div>
             <img
@@ -126,6 +128,7 @@ const Hero = () => {
             <p className='text-xs w-14 truncate text-center'>Squits</p>
           </div>
         </div>
+        <HeroPostItem />
       </section>
       <section>right</section>
     </div>
