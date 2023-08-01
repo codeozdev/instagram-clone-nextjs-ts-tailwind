@@ -5,7 +5,7 @@ import {
   AiOutlinePlusCircle,
 } from 'react-icons/ai'
 
-const Header = () => {
+const Header: React.FC = () => { 
   return (
     <div className='sticky top-0 border-b shadow-sm bg-white z-30'>
       <div className='flex justify-between h-24 items-center mx-4'>
@@ -23,7 +23,7 @@ const Header = () => {
           />
         </div>
         {/* Search bar */}
-        <div className='flex justify-center items-center border rounded-lg p-1 '>
+        <div className='flex justify-center items-center border rounded-lg p-1'>
           <AiOutlineSearch className='mr-2  text-gray-500' />
           <input
             type='text'
@@ -44,7 +44,7 @@ const Header = () => {
           />
           <img
             src='https://yt3.googleusercontent.com/ytc/AOPolaSZDA_-W-C-dpVo4BtwlIBmTIEti1UcNqS8g9F7oQ=s900-c-k-c0x00ffffff-no-rj'
-            alt=''
+            alt='img'
             className='h-10 rounded-full'
           />
         </div>
