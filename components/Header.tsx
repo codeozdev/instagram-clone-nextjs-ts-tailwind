@@ -40,12 +40,12 @@ const Header: React.FC = () => {
           />
           <AiOutlinePlusCircle
             size={24}
-            className='hover:scale-125 transition-transform duration-200 ease-out'
+            className='hover:scale-125 transition-transform duration-200 ease-out hidden sm:inline-flex'
           />
           <img
             src='https://yt3.googleusercontent.com/ytc/AOPolaSZDA_-W-C-dpVo4BtwlIBmTIEti1UcNqS8g9F7oQ=s900-c-k-c0x00ffffff-no-rj'
             alt='img'
-            className='h-10 rounded-full'
+            className='h-10 rounded-full hidden sm:inline-flex'
           />
         </div>
       </div>

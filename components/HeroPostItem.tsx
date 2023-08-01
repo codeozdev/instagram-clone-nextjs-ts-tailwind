@@ -8,7 +8,7 @@ import { HiOutlineEmojiHappy } from 'react-icons/hi'
 const HeroPostItem: React.FC = () => {
   return (
     <div>
-      <div className='border my-7 bg-white rounded-md'>
+      <div className='border my-7 bg-white rounded-md cursor-pointer'>
         <div className='flex items-center p-5'>
           <img
             src='https://i.pravatar.cc/150?img=10'
@@ -16,7 +16,7 @@ const HeroPostItem: React.FC = () => {
             className='h-12  rounded-full border p-1 mr-3'
           />
           <p className='flex-1 font-bold'>Adysed</p>
-          <BsThreeDots />
+          <BsThreeDots className='cursor-pointer' />
         </div>
         {/* post image */}
         <Image
@@ -39,7 +39,7 @@ const HeroPostItem: React.FC = () => {
         </p>
 
         {/* comments */}
-        <div className='px-4 max-h-24 overflow-y-scroll scrollbar-none cursor-pointer'>
+        <div className='px-4 max-h-24 overflow-y-scroll cursor-pointer'>
           <div className='flex items-center space-x-2 mb-2'>
             <img
               src='https://i.pravatar.cc/150?img=5'
@@ -88,7 +88,7 @@ const HeroPostItem: React.FC = () => {
           <input
             type='text'
             placeholder='Enter your comment...'
-            className='border-none flex-1 focus:ring-0 ml-3'
+            className='border-none flex-1 focus:ring-0 ml-3 focus:outline-none'
           />
           <button className='font-bold text-blue-400'>Post</button>
         </form>
@@ -96,14 +96,14 @@ const HeroPostItem: React.FC = () => {
 
       {/* two post card */}
       <div className='border my-7 bg-white rounded-md'>
-        <div className='flex items-center p-5'>
+        <div className='flex items-center p-5 cursor-pointer'>
           <img
             src='https://i.pravatar.cc/150?img=10'
             alt='img'
             className='h-12  rounded-full border p-1 mr-3'
           />
           <p className='flex-1 font-bold'>Adysed</p>
-          <BsThreeDots />
+          <BsThreeDots className='' />
         </div>
 
         {/* post image */}
@@ -129,7 +129,7 @@ const HeroPostItem: React.FC = () => {
         </p>
 
         {/* comments */}
-        <div className='px-4 max-h-24 overflow-y-scroll scrollbar-none cursor-pointer'>
+        <div className='px-4 max-h-24 overflow-y-scroll cursor-pointer'>
           <div className='flex items-center space-x-2 mb-2'>
             <img
               src='https://i.pravatar.cc/150?img=5'
@@ -178,7 +178,7 @@ const HeroPostItem: React.FC = () => {
           <input
             type='text'
             placeholder='Enter your comment...'
-            className='border-none flex-1 focus:ring-0 ml-3'
+            className='border-none flex-1 focus:ring-0 ml-3 focus:outline-none'
           />
           <button className='font-bold text-blue-400'>Post</button>
         </form>

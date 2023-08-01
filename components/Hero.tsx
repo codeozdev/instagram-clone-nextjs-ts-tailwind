@@ -1,12 +1,13 @@
 import HeroPostItem from './HeroPostItem'
+import HeroRight from './HeroRight'
 
 /* eslint-disable @next/next/no-img-element */
 const Hero = () => {
   return (
-    <div>
-      <section>
+    <div className='grid grid-cols-1 lg:grid-cols-3'>
+      <section className='lg:col-span-2 mt-14'>
         {/* round pictures */}
-        <div className='flex space-x-2 p-6 cursor-pointer border overflow-x-scroll scrollbar-none rounded-sm'>
+        <div className='flex space-x-2 p-6 cursor-pointer border overflow-x-scroll scrollbar-none rounded-md'>
           <div>
             <img
               src='https://yt3.googleusercontent.com/ytc/AOPolaSZDA_-W-C-dpVo4BtwlIBmTIEti1UcNqS8g9F7oQ=s900-c-k-c0x00ffffff-no-rj'
@@ -130,7 +131,7 @@ const Hero = () => {
         </div>
         <HeroPostItem />
       </section>
-      <section>right</section>
+      <HeroRight />
     </div>
   )
 }
